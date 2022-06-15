@@ -1,6 +1,7 @@
 #include "shell.h"
 
 /**
+ * William Mitiku and Marta Assefa
  * get_history_file - gets the history file
  * @info: parameter struct
  *

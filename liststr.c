@@ -1,6 +1,7 @@
 #include "shell.h"
 
 /**
+ * William Mitiku and Marta Assefa
  * add_node - adds a node to the start of the list
  * @head: address of pointer to head node
  * @str: str field of node

@@ -1,6 +1,7 @@
 #include "shell.h"
 
 /**
+ * William Mitiku and Marta Assefa
  * list_len - determines length of linked list
  * @h: pointer to first node
  *

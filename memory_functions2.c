@@ -1,6 +1,7 @@
 #include "shell.h"
 
 /**
+ * William Mitiku and Marta Assefa
  * bfree - frees a pointer and NULLs the address
  * @ptr: address of the pointer to free
  *

@@ -1,6 +1,7 @@
 #include "shell.h"
 
 /**
+ * William Mitiku and Marta Assefa
  * main - entry point
  * @ac: arg count
  * @av: arg vector

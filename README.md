@@ -1,20 +1,9 @@
 # Simple Shell Project
-
+By William Mitiku and Marta Assefa
 **A simple Unix command line interpreter**
 ![shell](/shell.png)
 
-****
-## Table of contents
- - **What is the shell?**
- - **About this project**
- - **Essential Functionalities of the Simple Shell**
- - **File description**
- - **List of allowed functions and system calls for this project**
- - **USAGE**
- - **Example of Usage**
- - **Bugs**
- - **TEAM**
- ****
+
 
 ## What is the shell?
 The shell is a program that takes commands from the keyboard via the terminal, and gives them to the operating system to perform.\
