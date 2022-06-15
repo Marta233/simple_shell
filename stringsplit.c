@@ -63,7 +63,7 @@ char *_strtok(char *str, char *delim)
  * @str: stored string from stdin
  * @par: array  of commands
  */
-void splitusingspace(char *str, char **par)
+void split_space(char *str, char **par)
 {
 	int i = 0;
 	char *piece;

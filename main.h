@@ -36,10 +36,10 @@ typedef struct store
 void execArg(char **command, store *data);
 int _strcmp(char *s1, char *s2);
 void free_environ(store *data);
-int readinput(char *str);
+int storeinput(char *str);
 char *_strcpy(char *dest, char *src);
 char *_itoa(int n);
-void splitusingspace(char *str, char **command);
+void split_space(char *str, char **command);
 int _strlen(char *s);
 char *_strcat(char *dest, char *src);
 int cpathandexec(char **command, store *data);

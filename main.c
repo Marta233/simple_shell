@@ -17,12 +17,12 @@ int main(int argc, char *argv[])
 	while (loop == 1)
 	{
 		write(STDIN_FILENO, "$ ", 2);
-		if (readinput(inputstr) == 0)
+		if (storeinput(inputstr) == 0)
 		{
 			if (!remove_comment(inputstr))
 				continue;
 			_strcpy(inputstr, remove_comment(inputstr));
-			splitusingspace(inputstr, command);
+			split_space(inputstr, command);
 			if (inputstr[0] != '\0')
 				cpathandexec(command, &data);
 			else

@@ -5,7 +5,7 @@
  * @str: pointer to passed string
  * Return: 0 on success and 1 on failure
  */
-int readinput(char *str)
+int storeinput(char *str)
 {
 	char *buf;
 	int x, i;
