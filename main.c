@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 	a = argc - argc;
 	while (loop == 1)
 	{
-		write(STDIN_FILENO, "shell$ ", 7);
+		write(STDIN_FILENO, "$ ", 2);
 		if (readinput(inputstr) == 0)
 		{
 			splitusingspace(inputstr, command);
