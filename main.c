@@ -7,23 +7,33 @@
  */
 int main(int argc, char *argv[])
 {
+	store data;
 	char inputstr[MAXCOM], *command[MAXLIST];
-	int a, loop = 1;
+	int loop = 1;
+	(void) argc;
 
-	a = argc - argc;
+	set_data(&data, argv[0]);
+	signal(SIGINT, ctrlchandler);
 	while (loop == 1)
 	{
 		write(STDIN_FILENO, "$ ", 2);
 		if (readinput(inputstr) == 0)
 		{
+			if (!remove_comment(inputstr))
+				continue;
+			_strcpy(inputstr, remove_comment(inputstr));
 			splitusingspace(inputstr, command);
 			if (inputstr[0] != '\0')
-				cpathandexec(command, argv[0]);
+				cpathandexec(command, &data);
 			else
 				continue;
+			data.counter += 1;
 		}
 		else
 			break;
 	}
-	return (a);
+	free_environ(&data);
+	if (data._return < 0)
+		return (255);
+	return (data._return);
 }
